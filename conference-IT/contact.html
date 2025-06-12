@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ICAIT Conference</title>
+    <style>
+            :root {
+      --primary-color: #002855;
+      --accent-color: #FFD700;
+      --bg-color: #f4f4f4;
+    }
+        /* General Styles */
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #e9eefa, #ffffff);
+
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: white;
+            color: #002855;
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header img {
+            height: 70px;
+            margin: 0 20px;
+        }
+        nav {
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #002855;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #0047AB;
+        }
+
+        /* Section Header Styles */
+        .section-header {
+            text-align: center;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 28px;
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-family: 'Times New Roman', serif;
+        }
+
+        /* Contact Card Styles */
+        .contact-card {
+            border: none;
+            padding: 20px;
+            margin: 20px auto;
+            text-align: center;
+            background: #f8f9fa;
+            border-radius: 8px;
+            width: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-card h3 {
+            font-size: 24px;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        .contact-card p {
+            font-size: 18px;
+            color: #555;
+            margin: 10px 0;
+        }
+        .contact-card a {
+            color: #0047AB;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact Container Styles */
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .contact-container .contact-card {
+            width: 45%;
+            text-align: center;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #002855;
+            color: white;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+        hr.section-divider {
+      border: none;
+      height: 2px;
+      width: 50%;
+      margin: 30px auto;
+      background: linear-gradient(to right, transparent, rgba(0,0,0,0.2), transparent);
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="static/Images/scopus_logo.png" alt="CONFF Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="committee.html">Committee</a>
+            <a href="key-dates.html">Key Dates</a>
+            <a href="call-for-papers.html">Call for Papers</a>
+            <a href="registration.html">Registration</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="venue.html">Venue</a>
+        </nav>
+        <img src="static/Images/svkm-logo.png" alt="SVKM Logo">
+    </header>
+    <br>
+    <br>
+
+    <!-- Contact Us Section -->
+    <section>
+        <h1 class="section-header">Contact Us</h1>
+        <p style="text-align: center; font-size: 18px; color: #555;">Get in touch with the 2025 ICAIT organizing committee</p>
+        <p style="text-align: center; font-size: 18px; color: #555;">SVKM’s Institute of Technology, Dhule, Maharashtra, India</p>
+    </section>
+  
+            <hr class="section-divider" />
+    <br>
+
+
+
+    <!-- Faculty Coordinators -->
+    <section id="Co-convener">
+        <h2 class="section-header">Co-Convener</h2>
+        <div class="contact-container">
+            <div class="contact-card">
+                <h3>Prof. Mangesh Balpande</h3>
+                <p><strong>Designation:</strong> Assistant Professor,Information Technology Engineering Department</p>
+                <p><strong>Phone:</strong> +91 9145551597</p>
+                <p><strong>Email:</strong> <a href="mailto:ieee.iot@svkm.ac.in">mangesh.balpande@svkm.ac.in</a></p>
+            </div>
+
+            <div class="contact-card">
+                <h3> Prof. Pravin Patil</h3>
+                <p><strong>Designation:</strong> Assistant Professor,Information Technology Engineering Department</p>
+                <p><strong>Phone:</strong> +91  9403384826</p>
+                <p><strong>Email:</strong> <a href="mailto:ieee.iot@svkm.ac.in">pravink.patil@svkm.ac.in</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ICAIT Conference | Organized by SVKM’s Institute of Technology, Dhule</p>
+    </footer>
+</body>
+</html>

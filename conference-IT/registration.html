@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - ICAIT Conference</title>
+    <style>
+            :root {
+      --primary-color: #002855;
+      --accent-color: #FFD700;
+      --bg-color: #f4f4f4;
+    }
+        /* General Styles */
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: white; /* Changed to white */
+            color: #002855; /* Dark blue for text */
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header img {
+            height: 70px; /* Increased logo size */
+            margin: 0 20px;
+        }
+        nav {
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #002855; /* Dark blue for text */
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            font-size: 20px; /* Increased font size */
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #0047AB; /* Lighter blue on hover */
+        }
+
+        /* Registration Section Styles */
+        .registration {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(to bottom right, #e9eefa, #ffffff);
+
+        }
+        .registration h2 {
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-family: 'Times New Roman', serif; /* Updated to Times New Roman */
+        }
+        .registration p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .registration-details {
+            margin: 0 auto;
+            width: 80%;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: left;
+        }
+        .registration-details h3 {
+            color: #0047AB;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .registration-details ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        .registration-details ul li {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .registration-details ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        .registration-details ol li {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .registration-details a {
+            color: #0047AB;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .registration-details a:hover {
+            text-decoration: underline;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #ffcc00;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #e6b800;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+            font-size: 18px;
+        }
+        th {
+            background-color: #0047AB;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #002855;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            font-size: 0.9rem;}
+     hr.section-divider {
+      border: none;
+      height: 2px;
+      width: 50%;
+      margin: 30px auto;
+      background: linear-gradient(to right, transparent, rgba(0,0,0,0.2), transparent);
+    }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <img src="static/Images/scopus_logo.png" alt="CONFF Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="committee.html">Committee</a>
+            <a href="key-dates.html">Key Dates</a>
+            <a href="call-for-papers.html">Call for Papers</a>
+            <a href="registration.html">Registration</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="venue.html">Venue</a>
+        </nav>
+        <img src="static/Images/svkm-logo.png" alt="SVKM Logo">
+    </header>
+
+    <!-- Registration Section -->
+    <section class="registration">
+        <h2>Registration</h2> <!-- Updated to Times New Roman -->
+        <p>Secure Your Spot for ICAIT 2025</p>
+        <p>1<sup>st</sup> - 2<sup>nd</sup> August 2025 | SVKM’s Institute of Technology, Dhule</p>
+      
+            <hr class="section-divider" />
+        <div class="registration-details">
+           
+            <h3>Registration Guidelines</h3>
+            <ul>
+                <li>One registration covers one paper (both presentation and publication charges).</li>
+                <li>Each participant must pay the appropriate registration fees for their category.</li>
+                <li>Organizers reserve the right to reject a registration if found in violation of registration rules or to reassign participants to a category they deem fit.</li>
+                <li>Registration is non-transferable.</li>
+                <li>Ensure payment of the registration fee before the deadline for the selected category.</li>
+                <li>The corresponding author will receive a registration overview, email confirmation of payment, and session details.</li>
+                <li>Presentation sessions and parallel sessions will be uploaded on the conference website two weeks prior to the conference date and will also be emailed to authors one week before the conference.</li>
+                <li>Payment invoices will be provided to participants upon request; they are not sent automatically.</li>
+            </ul>
+
+            <h3>Registration Process</h3>
+            <ol>
+                <li><strong>Step 1: Prepare Camera-Ready Paper In  Format</strong><br>
+                    Update your paper according to review comments and format it as per the provided template.<br>
+                    <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.svkm-iot.ac.in%2Fwp-content%2Fuploads%2F2025%2F04%2FUpdated_Paper-template.docx&wdOrigin=BROWSELINK" download>Download Template</a>
+                </li>
+                <li><strong>Step 2: Submit Copyright Form</strong><br>
+                    The corresponding author must sign and accept responsibility for releasing the material on behalf of all co-authors. Submit a scanned copy of the signed copyright form in PDF or image format along with the final camera-ready paper.<br>
+                </li>
+                <li><strong>Step 3: Payment Process</strong><br>
+                    After completing the above steps, proceed to the payment process as detailed below.
+                </li>
+            </ol>
+            <h3>Registration Fee Structure</h3>
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Early Bird</th>
+                </tr>
+                <tr>
+                    <td>Students / Research Scholars / Industry Delegates and Academicians</td>
+                    <td>₹ 7,500/-</td>
+                    <td>₹ 7,000/-</td>
+                </tr>
+                <tr>
+                    <td>International Delegates</td>
+                    <td>$ 100</td>
+                    <td>$ 95</td>
+                </tr>
+            </table>
+            
+            <p><strong>Note:</strong> Registration fee covers conference kit and e-proceedings.</p>
+             </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ICAIT  Conference | Organized by SVKM’s Institute of Technology, Dhule</p>
+    </footer>
+
+</body>
+</html>

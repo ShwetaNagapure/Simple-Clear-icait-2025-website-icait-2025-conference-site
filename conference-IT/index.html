@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ICAIT Conference - SVKM</title>
+  <style>
+    :root {
+      --primary-color: #002855;
+      --accent-color: #FFD700;
+      --bg-color: #f4f4f4;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(to bottom right, #e9eefa, #ffffff);
+      color: #333;
+    }
+
+    header {
+            background-color: rgb(248, 245, 245); /* Changed to white */
+            color: #002855; /* Dark blue for text */
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header img {
+            height: 70px; /* Increased logo size */
+            margin: 0 20px;
+        }
+        nav {
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #002855; /* Dark blue for text */
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            font-size: 20px; /* Increased font size */
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #0047AB; /* Lighter blue on hover */
+        }
+    .hero {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px 30px;
+      
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    /* Use Times New Roman for the specific headings */
+    .hero-content h1,
+    .hero-content h2,
+    .hero-content p {
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .hero-content h1 {
+      font-size: 32px;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .hero-content h2 {
+      font-size: 24px;
+      color: var(--accent-color);
+      margin: 5px 0;
+    }
+
+    .hero-content p {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+
+    .button-container {
+      margin-top: 20px;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .hero-content button {
+      background-color: var(--accent-color);
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero-content button:hover {
+      background-color: gold;
+    }
+
+    .conference-info {
+       display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch; /* Ensure equal height for both containers */
+  padding: 40px 20px;
+      
+    }
+
+    .hero-image {
+  max-width: 600px;
+  height: auto;
+  
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  text-align: center;
+  border: none; /* No border */
+}
+
+    .hero-image img {
+      max-width: 600px;
+      height: 50vh;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    .about-conference {
+      flex: 1 1 500px;
+      max-width: 600px;
+      margin-left: 20px;
+      background-color: #fff;
+      padding: 20px;
+      border-left: 5px solid var(--accent-color);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .about-conference h3 {
+      font-size: 1.5rem;
+      color: #002855;
+      margin-bottom: 10px;
+    }
+
+    .about-conference p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    .association {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .association h2 {
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+    }
+
+    .association img {
+      width: 150px;
+      margin: 0 20px;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .Publication {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .Publication h2 {
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+    }
+
+    .Publication img {
+      width: 150px;
+      margin: 0 20px;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+    hr.section-divider {
+      border: none;
+      height: 2px;
+      width: 50%;
+      margin: 30px auto;
+      background: linear-gradient(to right, transparent, rgba(0,0,0,0.2), transparent);
+    }
+
+    @media (max-width: 768px) {
+      .conference-info {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .about-conference {
+        margin-left: 0;
+        margin-top: 20px;
+      }
+
+      .speaker {
+        max-width: 90%;
+      }
+
+      .association img {
+        width: 120px;
+        margin: 10px;
+      }
+     
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="static/Images/scopus_logo.png" alt="CONFF Logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="committee.html">Committee</a>
+        <a href="key-dates.html">Key Dates</a>
+        <a href="call-for-papers.html">Call for Papers</a>
+        <a href="registration.html">Registration</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="venue.html">Venue</a>
+    </nav>
+    <img src="static/Images/svkm-logo.png" alt="SVKM Logo">
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1 style="line-height: 1.2; margin: 0;">
+      A Multidisciplinary<br>
+      International Conference on Advances in Information Technology
+    </h1>
+    <h2>ICAIT 2025 (Hybrid)</h2>
+    <p>1<sup>st</sup> - 2<sup>nd</sup> August 2025</p>
+    <p>Internal Quality Assurance Cell</p>
+    <p>and</p>
+    <p>Dept. of Information Technology</p>
+    <p>SVKM’s Institute of Technology, Dhule, Maharashtra, India</p>
+
+    <div class="button-container">
+      <!-- Download Template -->
+      <button onclick="downloadTemplate()">Download Template</button>
+
+      <!-- Download Brochure -->
+      <button onclick="downloadBrochure()">Download Brochure</button>
+    </div>
+  </div>
+</section>
+
+  <br>
+  <hr class="section-divider" />
+
+  <section class="conference-info">
+    <div class="hero-image">
+      <img src="static/Images/svknMain Building.jpg" alt="College Campus" />
+    </div>
+
+    <div class="about-conference">
+      <h3>About the Conference</h3>
+      <p>
+        Internal Quality Assurance Cell & Department of Information Technology, SVKM’s Institute of Technology, Dhule,
+        Maharashtra, India is organizing a two-day multidisciplinary international conference on
+        <strong>“1<sup>st</sup> International Conference on Advances In Information Technology (ICAIT 2025)”</strong>
+        during August 01–02, 2025.
+      </p>
+      <p>
+        The conference seeks significant contributions in all major multidisciplinary fields, both theoretical and practical.
+      </p>
+      <p>
+        
+        The aim of this conference is to provide an excellent international forum for sharing knowledge, exploring recent
+        trends, and engaging in cutting-edge developments in the field.<br>
+        
+        <b> All accepted and presented papers will be indexed in scopus</b><br>
+      </p>
+    </div>
+  </section>
+
+
+  <hr class="section-divider" />
+  <section class="association">
+    <h2>In Association With</h2>
+    <img src="static/Images/sngu_logo.jpg" alt="SNGU Logo">
+    <img src="static/Images/IETE_Logo.jpg" alt="IETE Logo">
+    <img src="static/Images/ISTE_LOGO.jpg" alt="ISTE Logo">
+  </section>
+ <hr class="section-divider" />
+
+  <section class="association">
+    <h2>Publication Partner</h2>
+    <img src="static/Images/IDES.png" alt="IDES Logo">
+    <img src="static/Images/Greenze.png" alt="Greenz Logo">
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ICAIT  Conference | Organized by SVKM’s Institute of Technology, Dhule</p>
+</footer>
+
+<script>
+  function downloadTemplate() {
+    window.location.href = 'static/documents/Paper-template.docx'; // Update with actual path
+  }
+
+  function downloadBrochure() {
+    window.location.href = 'static/documents/Brochure_Conference_ICAIT 2025_Final.pdf'; // Update with actual path
+  }
+</script>
+
+
+</body>
+</html>

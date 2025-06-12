@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venue - ICAIT Conference</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #e9eefa, #ffffff);
+
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: white;
+            color: #002855;
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header img {
+            height: 70px;
+            margin: 0 20px;
+        }
+        nav {
+            text-align: center;
+        }
+        nav a {
+            color: #002855;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #0047AB;
+        }
+
+        /* Section Header Styles */
+        .section-header {
+            text-align: center;
+            color: #003366;
+            font-weight: bold;
+            font-size: 26px;
+            margin-top: 40px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'Times New Roman', serif;
+        }
+
+        /* Content Box Styles (Updated) */
+        .content-box {
+            border: 1px solid #d1d1d1;
+            padding: 30px;
+            margin: 30px auto;
+            text-align: center;
+            background: #ffffff;
+            border-radius: 12px;
+            width: 70%;
+            font-family: 'Times New Roman', serif;
+            font-size: 18px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.3s ease;
+        }
+        .content-box:hover {
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+        .content-box ul {
+            text-align: left;
+            padding: 0 20px;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #002855;
+            color: white;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+
+        /* Google Maps Container */
+        .map-container {
+            text-align: center;
+            margin: 30px auto;
+            width: 80%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="static/Images/scopus_logo.png" alt="CONFF Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="committee.html">Committee</a>
+            <a href="key-dates.html">Key Dates</a>
+            <a href="call-for-papers.html">Call for Papers</a>
+            <a href="registration.html">Registration</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="venue.html">Venue</a>
+        </nav>
+        <img src="static/Images/svkm-logo.png" alt="SVKM Logo">
+    </header>
+
+    <!-- Conference Venue Section -->
+    <section>
+        <h1 class="section-header">Conference Venue</h1>
+        <div class="content-box">
+            <p>Join us at the state-of-the-art conference venue:</p>
+            <p><strong>SVKM’s Institute of Technology, Dhule, Maharashtra, India</strong></p>
+        </div>
+    </section>
+
+    <!-- Venue Location -->
+    <section id="venue-location">
+        <h2 class="section-header">Location & Directions</h2>
+        <div class="content-box">
+            <p><strong>Venue Address:</strong></p>
+            <p>Shri Vile Parle Kelavani Mandal's Institute of Technology</p>
+            <p>Survey No. 499, Plot No 02, Mumbai - Agra Rd, behind Gurudwara, Dhule, Maharashtra 424001</p>
+        </div>
+        <h3 class="section-header">How to Reach</h3>
+        <div class="content-box">
+            <ul>
+                <li><strong>By Air:</strong> Nearest airport is <b>Nashik International Airport (155 km)</b></li>
+                <li><strong>By Rail:</strong> <b>Dhule Railway Station</b> is just <b>5 km</b> from the venue.</li>
+                <li><strong>By Road:</strong> Direct bus and taxi services are available from Mumbai, Pune, Nashik, and Indore.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Google Maps Section -->
+    <section id="google-map">
+        <h2 class="section-header">Find Us on Google Maps</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3728.0369424359096!2d74.7660727752967!3d20.870561180739504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssvkm%20iot%20dhule!5e0!3m2!1sen!2sin!4v1743725040100!5m2!1sen!2sin"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div> 
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ICAIT  Conference | Organized by SVKM’s Institute of Technology, Dhule</p>
+    </footer>
+</body>
+</html>

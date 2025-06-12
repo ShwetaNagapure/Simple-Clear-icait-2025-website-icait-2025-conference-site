@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Committee - ICAIT 2025 </title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Times New Roman', serif;    
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #f0f4ff, #ffffff);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white; /* Changed to white */
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif; /* Revert navbar font to Arial */
+
+        }
+        .navbar .logo {
+            height: 70px;
+            margin: 0 20px;
+        } /* Increased logo size */
+        
+        .navbar nav a {
+            color: #002855; /* Dark blue for text */
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 20px; /* Increased font size */
+            transition: color 0.3s;
+        }
+        .navbar nav a:hover {
+            color: #002855; /* Lighter blue on hover */
+        }
+
+        /* Committee Section Styles */
+        .committee-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .committee-section h2 {
+            color: #002855;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        .committee-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .committee-card {
+            background: rgb(235, 247, 249);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .committee-card:hover {
+            transform: translateY(-5px);
+        }
+        .committee-card img {
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+        }
+        .committee-card h3 {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #002855;
+        }
+        .committee-card p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+        .committee-card p strong {
+            font-weight: bold;
+            color: #002855;
+        }
+
+        /* Committees Section Styles */
+        #committees {
+            padding: 40px 20px;
+            text-align: center;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        #committees h2 {
+            color: #002855;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        #committees h3 {
+            color: #002855;
+            font-size: 1.5rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        #committees ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 auto;
+            max-width: 800px;
+            text-align: left;
+        }
+        #committees ul li {
+            background: #f8f9fa;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 0.95rem;
+            color: #333;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #002855;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+
+        /* Centered Headings for Organizing Chair and Patrons */
+        #organizing-chair h2,
+        #patrons h2 {
+            text-align: center;
+            color: #004aad;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="static/Images/scopus_logo.png" alt="CONFF Logo" class="logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="committee.html">Committee</a>
+                <a href="key-dates.html">Key Dates</a>
+                <a href="call-for-papers.html">Call for Papers</a>
+                <a href="registration.html">Registration</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="venue.html">Venue</a>
+            </nav>
+            <img src="static/Images/svkm-logo.png" alt="SVKM Logo" class="logo">
+        </div>
+    </header>
+
+    <!-- Chief Patrons -->
+    <section class="committee-section">
+        <h2>Chief Patrons</h2>
+        <div class="committee-container">
+            <div class="committee-card">
+                <img src="static/Images/Honble Shri Amrishbhai Patel.jpg" alt="Hon’ble Shri Amrishbhai Patel">
+                <h3>Hon’ble Shri Amrishbhai Patel</h3>
+                <p><strong>President</strong>, SVKM Mumbai</p>
+            </div>
+            <div class="committee-card">
+                <img src="static/Images/Honble Shri Bhupeshbhai Patel Joint President, SVKM Mumbai.png" alt="Hon’ble Shri Bhupeshbhai Patel">
+                <h3>Hon’ble Shri Bhupeshbhai Patel</h3>
+                <p><strong>Joint President</strong>, SVKM Mumbai</p>
+            </div>
+            <div class="committee-card">
+                <img src="static/Images/Honble Shri Chintanbhai Patel.jpg" alt="Hon’ble Shri Chintanbhai Patel">
+                <h3>Hon’ble Shri Chintanbhai Patel</h3>
+                <p><strong>Vice-President</strong>, SVKM Mumbai</p>
+            </div>
+            <div class="committee-card">
+                <img src="static/Images/Hon’ble Smt. SnehaA. Parekh.jpg" alt="Hon’ble Smt. Sneha A. Parekh">
+                <h3>Hon’ble Smt. Sneha A. Parekh </h3>
+                <p><strong>President & Chancellor</strong>,SVKM NMIMS Global University</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patrons -->
+    <section class="committee-section">
+        <h2>Patrons</h2>
+        <div class="committee-container">
+            <div class="committee-card">
+                <img src="static/Images/Shri Rajgopal Bhandari.jpg" alt="Shri Rajgopal Bhandari">
+                <h3>Shri Rajgopal Bhandari</h3>
+                <p><strong>Member, Managing Committee</strong>, SVKM Mumbai</p>
+            </div>
+            <div class="committee-card">
+                <img src="static/Images/Shri Sanjay Agarwal , Chairman, SVKM NMIMS Dhule Campus.jpg" alt="Shri Sanjay Agarwal">
+                <h3>Shri Sanjay Agarwal</h3>
+                <p><strong>Chairman</strong>, SVKM NMIMS Dhule Campus</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizing Chair -->
+    <section class="committee-section">
+        <h2> Conference Chair </h2>  
+        <div class="committee-container">
+            <div class="committee-card">
+                <img src="static/Images/Dr. Nilesh Salunke.jpg" alt="Dr. Nilesh Salunke">
+                <h3>Dr. Nilesh Salunke</h3>
+                <p><strong>Principal</strong>, SVKM’s Institute of Technology, Dhule</p>
+            </div>
+        </div>
+    </section>
+
+     <!-- HOD -->
+     <section class="committee-section">
+        <h2> CONVENER </h2>  
+        <div class="committee-container">
+            <div class="committee-card">
+                <img src="static/Images/Dr.Bhushan Chaudhari.jpg" alt="Dr. Bhushana Chaudhari ">
+                <h3>Dr. Bhushan Chaudhari</h3>
+                <p><strong>HoD( Information Technology)</strong>, SVKM’s Institute of Technology, Dhule</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Committees Section -->
+    <section id="committees">
+        <h2>Committees</h2>
+        <h3>Technical Program Committee </h3>
+        <ul style="background-color:rgb(235, 247, 249);">
+            <li>Dr. Makarand Shahade, HoD, Computer Engineering</li>
+            <li>Dr. Vishal Moyal, HoD, Electrical Engineering</li>
+            <li>Dr. Hitesh Thakare, HoD, Mechanical Engineering</li>
+            <li>Dr. Shrikant Randhavane, HoD, Civil Engineering</li>
+            <li>Dr. Tushar Shinde, HoD, Applied Sciences & Humanities</li>
+            <li>Dr. Narayan Chandak, Academic Coordinator</li>
+            <li>Dr. Shakeel-Ur Raheman, Member Secretary, IQAC</li>
+        </ul>
+        <h3>Technical Advisory Committee </h3>
+        <ul style="background-color:rgb(235, 247, 249);">
+    <li>Dr. Tariq Abdullah, Computing & IT, College of Science and Engineering, University of Derby, United Kingdom</li>
+    <li>Dr. Ramesh C. Bansal, University of Sharjah, UAE</li>
+    <li>Prof. Musa Yilmaz, University of California Riverside, USA</li>
+    <li>Mr. Shipij Rathore, Project Engineer, ABB, Sweden</li>
+    <li>Dr. Pramod Patil, Dean - Faculty of Science & Technology, SPPU, Pune</li>
+    <li>Dr. Rajeev Papneja, AI/ML Expert, Frederick Taylor International University, Arizona, USA</li>
+    <li>Dr. Rajesh Prasad, Principal, Bharati Vidyapeeth University, Pune</li>
+    <li>Dr. Parikshit Mahalle, Dean, Research and Development, VIIT, Pune</li>
+    <li>Dr. Nilanjan Dey, Assistant Professor, Birla Institute of Technology and Science, Pilani</li>
+    <li>Dr. Avadhut Sardeshmukh, Senior Scientist, Tata Consultancy Services, Pune</li>
+    <li>Dr. S. R. Sathe, Professor at VNIT, Nagpur</li>
+    <li>Dr. Shrikant Tiwari, Associate Professor, Galgotias University, Noida</li>
+        </ul>
+        <h3>Organizing Committee</h3>
+        <ul style="background-color:rgb(235, 247, 249);" >
+            <li>Prof. Sagar Badjate, Assistant Professor, IT Dept.</li>
+            <li>Prof. Mangesh Balpande, Assistant Professor, IT Dept.</li>
+            <li>Prof. Amol Suryawanshi, Assistant Professor, IT Dept.</li>
+            <li>Prof. Pravin Patil, Assistant Professor, IT Dept.</li>
+            <li>Prof. Niteen Dhutraj, Assistant Professor, IT Dept.</li>
+            <li>Prof. Sachin Kamble, Assistant Professor, IT Dept.</li>
+            <li>Prof. Madhuri Patil, Assistant Professor, IT Dept.</li>
+            <li>Prof. Bhagyashri Thakare, Assistant Professor, IT Dept.</li>
+            <li>Mr. Pradeep Surwade, Technical Assistant, IT Dept.</li>
+            <li>Mr. Nilesh Pawar, Technical Assistant, IT Dept.</li>
+            <li>Mr. Mahesh Wagh, Technical Assistant, IT Dept.</li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 ICAIT Conference | Organized by SVKM’s Institute of Technology, Dhule</p>
+    </footer>
+</body>
+</html>
